@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divvy" style="width:100px; height:100px; background-color: pink;">
+        <script>
+            window.onload=function donwnow(){
+                console.log("hi");
+                document.getElementById("divvy").addEventListener("mousedown", function(){ changecolor(this,"green");});
+                document.getElementById("divvy").addEventListener("mouseup", function(){ changecolor(this,"yellow");});
+                document.getElementById("divvy").addEventListener("dblclick", function(){ changecolor(this,"black");});
+                document.getElementById("divvy").addEventListener("mouseout", function(){ changecolor(this,"blue");});
+            }
+        </script>
+    </div>
+</body>
+</html>
